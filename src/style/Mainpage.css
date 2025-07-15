@@ -1,0 +1,74 @@
+.MainPage {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f5f1; /* light beige base */
+  overflow: hidden;
+}
+
+/* Sidebar */
+.SideBar {
+  width: 240px;
+  background: #f2e8dc; /* beige variant */
+  border-right: 1px solid #ccc; /* silver border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.SideBar h1 {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.SideBar a {
+  text-decoration: none;
+  color: #555;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.SideBar a:hover {
+  background-color: #e1d8c9; /* softer beige */
+  color: #222;
+}
+
+.SideBar a.active {
+  background-color: #d0cbc4; /* silver-beige blend */
+  color: #000;
+  font-weight: 600;
+}
+
+/* Main content */
+.MainBar {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 30px 40px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar for overflow */
+.MainBar::-webkit-scrollbar {
+  width: 8px;
+}
+.MainBar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.MainBar::-webkit-scrollbar-track {
+  background: #f7f5f1;
+}

@@ -1,0 +1,161 @@
+.TopBar {
+  background-color: #f2e8dc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  gap:15px;
+}
+
+.RemAmount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.topbar-btn{
+    display: flex;
+    gap: 15px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.AddCashBtn,
+.AddExpenseBtn {
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  font-family: inherit;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.AddCashBtn {
+  background-color: #378e4e;
+  color: white;
+}
+
+.AddExpenseBtn {
+  background-color: #3174bc;
+  color: white;
+}
+
+.AddCashBtn:hover, .AddExpenseBtn:hover {
+  transform: scale(1.05);
+}
+
+.DisplayTable {
+  width: 100%;
+  background-color: #fffefc;
+  border-collapse: collapse;
+  border: 1px solid #e2dfdb;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top: none;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(180, 180, 180, 0.08);
+}
+
+.DisplayTable th,
+.DisplayTable td {
+  padding: 10px;
+  text-align: center;
+}
+
+.DisplayTable th {
+  background-color: #eaeaea;
+  font-weight: 400;
+}
+
+.edit-btn, .del-btn{
+  padding: 6px 12px;
+  font-size: 13.5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #eee;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.del-btn{
+  margin-left: 5px;
+  background-color: #ff0000ca;
+}
+
+.edit-btn{
+  background-color: #3174bc;
+}
+
+.del-btn:hover{
+  background-color: #ff0000af;
+  color: #fff;
+}
+
+.edit-btn:hover{
+  background-color: #3174bce3;
+  color: #fff;
+}
+
+
+.no-data{
+  background-color: #f9f9f9;
+  color: #888;
+  text-align: center !important;
+  font-size: 16px;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 25px;
+}
+
+.toggle-btn-in, .toggle-btn-out {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+.toggle-btn-in{
+    margin-right: 10%;
+}
+.toggle-btn-out{
+    margin-left: 10%;
+}
+
+.toggle-btn-in:hover, .toggle-btn-out:hover {
+  background-color: #333;
+  color: whitesmoke;
+}
+
+.toggle-btn-in.active, .toggle-btn-out.active {
+  background-color: #333;
+  border: 1px solid #e2dfdb;
+  border-bottom: none;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: none;
+  color: whitesmoke;
+}

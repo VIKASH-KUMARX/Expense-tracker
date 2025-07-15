@@ -1,0 +1,83 @@
+.profile-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: #fffdfc;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  color: #2e2e2e;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-container h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.profile-container h2 span {
+  color: #3174bc;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  width: 140px;
+  background-color: #f9f7f4;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.stat-box:hover{
+  transform: scale(1.05);
+}
+
+.stat-box h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #777;
+}
+
+.stat-box p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.income p {
+  color: #378e4e;
+}
+
+.expense p {
+  color: #cb3e3e;
+}
+
+.bal-pos {
+  color: #378e4e;
+}
+
+.bal-neg{
+    color:#cb3e3e ;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: rgb(225, 18, 18);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+  transform: scale(1.1);
+}

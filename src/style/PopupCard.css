@@ -1,0 +1,152 @@
+.container {
+  max-width: 320px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  max-height: 72vh;
+  overflow-y: auto;
+}
+
+.container > button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.container > button:hover {
+  transform: scale(1.2);
+  color: #e57373;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: #444;
+}
+
+form.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.inp-grp {
+  width: 80%;
+  max-width: 260px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  outline: none;
+  text-align: center;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+form.card > div:not(.category):not(.item-qty) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.sel-opt {
+  width: 200px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  background-color: #fff;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+form.card > div:not(.category):not(.item-qty) > button {
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #FFCBA4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+form.card > div:not(.category):not(.item-qty) > button:hover {
+  background-color: #FFAA7C;
+}
+
+.add-can{
+  background-color: #FFCBA4;
+  color: white;
+  height: 32px;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item-qty {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.item-qty input[type="text"],
+.item-qty input[type="number"] {
+  width: 36%;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  text-align: center;
+}
+
+.submit-btn {
+  height: 32px;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  background-color: #C0C0C0;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #A9A9A9;
+}

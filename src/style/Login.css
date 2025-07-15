@@ -1,0 +1,107 @@
+/* Soft peach background to evoke calm and finance */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background-color: #fff6f0; /* Light peach */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Decorative faded background text */
+body::before {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.04); /* Very light gray text */
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* Login container with semi-transparent silver */
+.login-container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(192, 192, 192, 0.3); /* Silver transparent */
+  padding: 40px;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+/* Title with neutral tone */
+.login-container h2 {
+  margin-bottom: 30px;
+  color: #444; /* Neutral dark gray */
+  font-size: 28px;
+}
+
+/* Input fields with gray underline */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  color: #333;
+}
+
+.login-container input::placeholder {
+  color: #777;
+}
+
+.login-container input:focus {
+  border-bottom-color: #555; /* Slightly darker on focus */
+}
+
+/* Button in subtle silver tone */
+.login-container .login-btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: rgba(160, 160, 160, 0.7); /* Soft silver-gray */
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .login-btn:hover {
+  background-color: rgba(120, 120, 120, 0.8); /* Slightly darker on hover */
+}
+
+/* Create account link in dark gray */
+.create-account {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.create-account .link-btn {
+  background-color: rgba(192, 192, 192, 0);
+  color: #555; 
+  border: none;
+  font-weight: bold;
+}
+
+.link-btn:hover{
+    transform: scale(1.1);
+}
+
+.link-btn:active{
+    transform: scale(1);
+}
